@@ -1,0 +1,113 @@
+//Configurações Gerais
+plugins {
+    id 'com.android.application'
+}
+
+//Configurações Gerais
+android {
+    //Configurações Gerais - Android Mínimo, Android Alvo, Nome Ref. Playstore, Etc
+    compileSdk 32
+    defaultConfig {
+        applicationId "marcelobaldi.listarecyclerview"
+        minSdk 24
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    //Configurações Gerais
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //Java 8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    //View Binding
+    viewBinding {
+        enabled = true
+    }
+
+    //Data Binding
+    dataBinding {
+        enabled = true
+    }
+}
+
+//Dependências - Variáveis
+def retrofitVersion = '2.3.0'
+def rxJavaVersion = '2.1.1'
+def lifecycle_version = "2.4.0"
+
+//Dependências - Internas e Externas
+dependencies {
+    //Padrão
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //RecyclerView, CardView, RefreshLayout
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    //ViewModel e LiveData
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+    //RxJava e RxAndroid
+    implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxJavaVersion"
+
+    //API
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    //API Imagens
+    implementation "com.github.bumptech.glide:glide:4.9.0"
+
+    //Dagger2
+    implementation 'com.google.dagger:dagger:2.28.3'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.28.3'
+}
+
+//Observações
+//- Versão Mínima Android:      24  (Android 7.0 - Nougat)
+//- Versão Alvo Android:        32  (Android 12.0)
+//- Nome App Ref. Playstore:    QQ Nome
+//- Versão Java:                1.8
+//- View Binding:               Habilitar
+//- Data Binding:               Habilitar
+//- Variáveis Libs:             Versões Libs
+//- Libs Int e Ext:             Importar
+//* Migrar para AndroidX:       Refactor / Migrate to AndroidX
+//* Sincronizar Gradle:         Botão Elefante
+
+//Libs - Utilizadas
+//- View Binding True:  Full  (Identificar Tela e Objetos)                  Menos Códigos
+//- Data Binding True:  FUll  (IdentTela, EventosObj, SetarObj, ProgXml)    Menos Códigos, Programação Xml
+//- Live Data:          Full  (Manipular Dados Entre Camadas)               Possui Listener's Também
+//- View Model:         Full  (Design Partners MVVM)                        Não Perde Dados na Horizontal
+//- Constraint Layout:  Front (Posicionar Objetos no Layout)                Mais Fácil (Só Arrastar na Tela)
+//- Material Design:    Front (Recursos Layout)                             Mais Recursos (Label Cx Entrada)
+//- RecyclerView:       Front (Manipular Lista)                             Melhor que ListView (Memória)
+//- CardView:           Front (Layout de Cartão)                            Usado muito nos Itens da Lista
+//- Refresh Layout:     Front (Atualizar Tela Arrast Dedo p/ Baixo)         Usado muito nas Listas, Dados API
+//- Rx Java:            Back  (Métodos Assíncronos - API, Etc)              Se Na Activity, Então Ñ Precisa
+//- Retrofit:           Back  (API - Manipular)                             Menos Códigos Que Manualmente
+//- Retrofit Gson:      Back  (API - Conversor)                             Tem Outros Conversores Tb
+//- Glide:              Back  (API - Imagens)                               Converte String em Imagem
+//- Dagger:             Back  (Injeção Dependências)                        Design Partners p/ Instanc Class
+//* Outras:             Room, SqLite, Firebase, Etc                         Etc
+

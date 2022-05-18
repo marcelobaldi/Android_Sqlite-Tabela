@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/00pAndr_Java/00Comp/60BD_SqLite_Sintaxe/2Banco_Tabela/2Completo/app/src/main/res/layout/activity_dog_list.xml" value="0.25" />
+        <entry key="..\:/00pAndr_Java/00Comp/60BD_SqLite_Sintaxe/2Banco_Tabela/2Completo/app/src/main/res/layout/activity_main.xml" value="0.15625" />
+        <entry key="..\:/00pMobAndroid/00Compilado/08Camadas_Normais/1Normal/app/src/main/res/layout/activity_dog_list.xml" value="0.22447916666666667" />
+        <entry key="..\:/00pMobAndroid/00Compilado/08Camadas_Normais/1Normal/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/00pMobAndroid/00Compilado/20Lista/2Completa_ViewBinding/1RecyclerView/app/src/main/res/layout/activity_dog.xml" value="0.22447916666666667" />
+        <entry key="..\:/00pMobAndroid/00Compilado/20Lista/2Completa_ViewBinding/1RecyclerView/app/src/main/res/layout/activity_dog_list.xml" value="0.22447916666666667" />
+        <entry key="..\:/00pMobAndroid/00Compilado/20Lista/2Completa_ViewBinding/1RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/00pMobAndroid/00Compilado/20Lista/2Completa_ViewBinding/1RecyclerView/app/src/main/res/layout/adapter_dog_linha.xml" value="0.22447916666666667" />
+        <entry key="..\:/00pMobAndroid/00Compilado/9Lista/2Completa_ViewBinding/1RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/00pMobAndroid/00HandsOn/01Lista/1RecyclerView/app/src/main/res/layout/activity_dog.xml" value="0.2203125" />
+        <entry key="..\:/00pMobAndroid/00HandsOn/01Lista/1RecyclerView/app/src/main/res/layout/activity_dog_list.xml" value="0.22447916666666667" />
+        <entry key="..\:/00pMobAndroid/00HandsOn/01Lista/1RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.35208333333333336" />
+        <entry key="..\:/00pMobAndroid/00HandsOn/01Lista/1RecyclerView/app/src/main/res/layout/adapter_dog_linha.xml" value="0.22447916666666667" />
+        <entry key="..\:/00pMobAndroid/00HandsOn/01Lista/app/src/main/res/layout/activity_dog.xml" value="0.25" />
+        <entry key="..\:/00pMobAndroid/00HandsOn/01Lista/app/src/main/res/layout/activity_dog_list.xml" value="0.25" />
+        <entry key="..\:/00pMobAndroid/00HandsOn/01Lista/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/00pMobAndroid/00HandsOn/01Lista/app/src/main/res/layout/adapter_dog_linha.xml" value="0.29213483146067415" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
